@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Quản Lý Giáo Viên</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
@@ -31,7 +31,7 @@
         <?php
             require_once $path.'header.php';
         ?>
-        <h4 class="main__body_heading"><?=$_SESSION['user']['name']?></h4>
+        <h4 class="main__body_heading"><?=$_SESSION['user']['name']?> - Quản Lý Giáo Viên</h4>
         <div class="main__body_container mb-3">
             <ul class="body__container_list grid wide row">
                 <li class="body__container_item">
@@ -78,21 +78,6 @@
                                 $name = $_POST['tenGv'];
                             }
                             $sql = "insert into teacher(maGv, name, maKhoa) values ('$maGv', '$name', '$maKhoa')";
-                            // if($connect->query($sql)){
-                            //     echo '
-                            //     <script>
-                            //         alert("Thêm Thành Công")
-                            //     </script>
-                            //     ';
-                            //     // header()
-                            // }
-                            // else{
-                            //     echo '
-                            //     <script>
-                            //         alert("Thêm thất bại do trùng mã giáo viên");
-                            //     </script>
-                            //     ';
-                            // }
                             $connect->query($sql);
                         }
                     ?>
@@ -108,8 +93,6 @@
                     <div class="form-group form-search__input">
                         <input type="search" class="form-control" name="searchMaGv" placeholder="Nhập mã giáo viên...">
                     </div>
-
-                    <!-- <button class="btn btn-success form-search__btn">Tìm Kiếm</button> -->
                 </form>
                 <table class="table table-bordered">
                     <thead>
