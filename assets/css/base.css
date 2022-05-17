@@ -1,0 +1,12 @@
+*{
+    box-sizing: inherit;
+}
+
+.textCenter{
+    vertical-align: middle !important;
+}
+
+body{
+    margin: 0;
+    padding:0;
+}

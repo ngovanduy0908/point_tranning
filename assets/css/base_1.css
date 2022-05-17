@@ -1,0 +1,19 @@
+.main__body_container{
+    background-color: #0c4ca3;
+}
+
+.main__body_container_list{
+    list-style: none;
+}
+
+.body__container_link{
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.body__container_link:hover{
+    color: #fff;
+    background-color: #0b4492;
+    text-decoration: none;
+}

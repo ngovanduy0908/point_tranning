@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main__body_container,
+.main__body_container-sub{
+    border: 2px solid #ccc;
+    padding: 10px 40px;
+}
+.container__header-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+
+}
+
+.container__header-title-one, .container__header-title-two{
+    text-align: center;
+}
+
+.container__header-title-school{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.sum_all{
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    
+}
+
+.sum_mark-student{
+    width: 40px;   
+    border: 0;
+    outline: 0;
+    font-weight: bold; 
+}
+
+.btn_save{
+    position: fixed;
+    bottom: 5px;
+    right: 25px;
+    width: 80px;
+}
+
+.mark_btn_edit{
+    
+    border: 1px solid #ccc;
+    position: fixed;
+    bottom: 5px;
+    right: 25px;
+    padding: 5px 10px;
+    background-color: aquamarine;
+    color: #000;
+}
+
+.mark_btn_edit:hover{
+    text-decoration: none;
+}
+
+.mark_column_sum{
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+
+}
+
+.sum_item{
+    border: 0;
+}
+
+.mark_back {
+    position: relative;
+    top: 15px;
+
+}
+
+.mark_back button{
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,rgba(52,194,220, 0.8), rgba(94, 231, 119, 0.8));
+    color: white;
+
+}
+
+.mark_back button:hover{
+    background-image: linear-gradient(to left,rgba(52,194,220, 0.8), rgba(94, 231, 119, 0.8));
+}
+
+.main__body_checkbox{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container__header-heading h5{
+    font-size: 14px;
+}
