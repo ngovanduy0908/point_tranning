@@ -79,7 +79,7 @@ $sql = "select * from department where maKhoa = '$maKhoa'";
                     <select name="maHK" id="" class="form-control">
             
                         <?php
-                        $sql = "select * from semester";
+                        $sql = "select * from semester order by rank";
                         $result = $connect->query($sql);
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
@@ -104,7 +104,7 @@ $sql = "select * from department where maKhoa = '$maKhoa'";
         
                     Danh sách
                     <select name="level_point" id="" class="form-control">
-                        <option value="0" <?php echo ($level_point == '0') ? 'selected' : ''; ?>>Tất Cả Các lớp</option>
+                        <option value="0" <?php echo ($level_point == '0') ? 'selected' : ''; ?>>Tất Cả Sinh Viên</option>
                         <option value="1" <?php echo ($level_point == '1') ? 'selected' : ''; ?>>SV Xuất Sắc</option>
                         <option value="2" <?php echo ($level_point == '2') ? 'selected' : ''; ?>>SV Giỏi</option>
                         <option value="3" <?php echo ($level_point == '3') ? 'selected' : ''; ?>>SV Khá</option>

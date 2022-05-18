@@ -1065,6 +1065,15 @@
                                     <td colspan="3">a). Là thành viên Ban cán sự lớp quản lý sinh viên, cán bộ Đoàn TN, Hội SV hoàn thành nhiệm vụ:</td>
                                 </tr>
                                 <tr>
+                                    <td width="70%" colspan="2">
+                                    -Không có chức vụ 
+                                    </td>  
+                                                       
+                                    <td>
+                                        <input type="radio" name="ltMonitor" id="" value="0" <?php echo ($ltMonitor == '0') ? "checked" :  "" ?>> 
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td width="70%">
                                         - Lớp trưởng, Phó Bí thư Liên chi, Bí thư Chi đoàn:…..…….................(+7đ)
                                     </td>                      
@@ -1079,10 +1088,11 @@
                                         ?>> 
                                     </td>
                                 </tr>
+
                                 <tr>
                                     <td width="70%">
                                         - Lớp phó, Phó Bí thư Chi đoàn, Hội trưởng Hội SV:........…………......(+5đ)
-                                    </td>                      
+                                    </td>                       
                                     <td>
                                         <input type="radio" name="svMonitor" id="" value="5" <?php echo ($svMonitor == '5') ? "checked" :  "" ?>> 
                                     </td>
@@ -1092,15 +1102,9 @@
                                         ?>> 
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td width="70%" colspan="2">
-                                    -Không có chức vụ 
-                                    </td>  
-                                                       
-                                    <td>
-                                        <input type="radio" name="ltMonitor" id="" value="0" <?php echo ($ltMonitor == '0') ? "checked" :  "" ?>> 
-                                    </td>
-                                </tr>
+
+                                
+
                                 <tr>
                                     <td>
                                     b). Được các cấp khen thưởng: ....….................….................………......(+3đ)
