@@ -113,7 +113,6 @@
             }
 
             $sum = $sumOfOne + $sumOfTwo + $sumOfThree + $sumOfFour + $sumOfFive;
-
         }
         // Lấy điểm ở bảng lớp trưởng
             $ltDiemTBHK = $ltCitizen  = $ltNCKH1 = $ltNCKH2 = $ltNCKH3 = $ltOlympic1 = $ltOlympic2 = $ltOlympic3 = $ltOlympic4 = $ltNoRegulation = $ltOnTime = $ltAbandon = $ltUnTrueTime = $ltNoFullStudy = $ltNoCard =  $ltNoAtivities = $ltNoPayFee = $ltFullActive = $ltAchievementCity = $ltAchievementSchool = $ltAdvise = $ltIrresponsible = 
@@ -603,7 +602,14 @@
                                         <!-- <input type="checkbox" name="" id="" value="-2">  -->
                                     </td>
                                 </tr>
-                                
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục I</h5>
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="number" class="sum_one sum_item" value="0">
+                                    </td>
+                                </tr>
                                 
                                 <tr>
                                     <td colspan="3">
@@ -798,6 +804,14 @@
                                     </td>
                                 </tr>
                                 
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục II</h5>
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="number" name="" id="" class="sum_two sum_item" value="">
+                                    </td>
+                                </tr>
 
                                 <tr>
                                     <td colspan="3">
@@ -993,6 +1007,15 @@
                                 </tr>
                                 
                                 <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục III</h5>
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="number" class="sum_three sum_item" value=0>
+                                    </td>
+                                </tr>
+
+                                <tr>
                                     <td colspan="3">
                                         <p><span style="font-weight: bold">IV.<u> Đánh giá về phẩm chất công dân và quan hệ công đồng </u></span> <span style="font-style: italic;">(Tổng điểm: 0 - 15 điểm)</span></p>
                                     </td>
@@ -1048,6 +1071,15 @@
                                     </td>
                                     <td>
                                         <input type="checkbox" name="ltNoProtect" id="" value="-20" <?php echo ($ltNoProtect == '-20') ? "checked" :  "" ?>> 
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục IV</h5>
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="number" class="sum_four sum_item" value="0">
                                     </td>
                                 </tr>
 
@@ -1164,12 +1196,30 @@
                                
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục V</h5>
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="number" class="sum_five sum_item" value="0">
+                                    </td>
+                                </tr>
+
                                 <tr>
                                     <td colspan="3"><h5>Ghi chú</h5></td>
                                 </tr>
                                 <tr>
                                     <td colspan="3">
                                         <textarea name="ltNote" id="ltNote" cols="" rows="" style="width: 100%"><?php echo $ltNote ?></textarea>
+                                    </td>
+                                </tr>
+                                <tr class="sum_all">
+                                    <td>
+                                        <h5 style="color: red; width: 70px;">Tổng: </h5>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="sum_mark-student" value="">
                                     </td>
                                 </tr>
                                 
@@ -1179,6 +1229,9 @@
                         
                         <button class="btn_save btn btn-success">Lưu</button>
                     </form>
+                    <?php
+                        require_once $path.'display_sum_point_student.php';
+                    ?>
                     <?php
                         if(isset($_POST['ltNCKH1'])){
                                 $ltDiemTBHK = $_POST['ltDiemTBHK'] ?? 0;
@@ -1455,6 +1508,8 @@
     </div>
         <!-- <script src = "../assets/js/test.js"></script> -->
         <script src = "../assets/js/monitorCheckPoint.js"></script>
+        <script src = "../assets/js/browser_monitor_mark.js"></script>
+
 
         
         <script>

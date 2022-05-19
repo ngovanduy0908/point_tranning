@@ -22,5 +22,5 @@
         $point_average = (float)$sql_get_point_item['point_average'];
         $status_to_show_table = 1;
     }
-    // echo $status_to_show_table;
+    // echo $status_to_show_table; 
 ?>

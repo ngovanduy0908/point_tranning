@@ -770,7 +770,15 @@
                                         <!-- <input type="checkbox" name="" id="" value="-2">  -->
                                     </td>
                                 </tr>
-                                
+
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục I</h5>
+                                    </td>
+                                    <td colspan="4">
+                                        <input type="number" class="sum_one sum_item" value="0">
+                                    </td>
+                                </tr>
                                 
                                 <tr>
                                     <td colspan="4">
@@ -1023,6 +1031,14 @@
                                     </td>
                                 </tr>
                                 
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục II</h5>
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="number" name="" id="" class="sum_two sum_item" value="">
+                                    </td>
+                                </tr>
 
                                 <tr>
                                     <td colspan="4">
@@ -1288,6 +1304,15 @@
                                         <!-- <input type="text" name="" id="" value="">  -->
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục III</h5>
+                                    </td>
+                                    <td colspan="4">
+                                        <input type="number" class="sum_three sum_item" value=0>
+                                    </td>
+                                </tr>
                                 
                                 <tr>
                                     <td colspan="4">
@@ -1357,6 +1382,15 @@
                                     </td>
                                     <td>
                                         <input type="checkbox" name="gvNoProtect" id="" value="-20" <?php echo ($gvNoProtect == '-20') ? "checked" :  "" ?>> 
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục IV</h5>
+                                    </td>
+                                    <td colspan="4">
+                                        <input type="number" class="sum_four sum_item" value="0">
                                     </td>
                                 </tr>
 
@@ -1493,6 +1527,16 @@
                                
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td width="70%">
+                                        <h5>Cộng mục V</h5>
+                                    </td>
+                                    <td colspan="4">
+                                        <input type="number" class="sum_five sum_item" value="0">
+                                    </td>
+                                </tr>
+
                                 <tr>
                                     <td colspan="4"><h5>Ghi chú</h5></td>
                                 </tr>
@@ -1502,12 +1546,25 @@
                                         <textarea name="gvNote" id="gvNote" cols="" rows="" style="width: 100%"><?php echo $gvNote ?></textarea>
                                     </td>
                                 </tr>
+                                
+
+                                <tr class="sum_all">
+                                    <td>
+                                        <h5 style="color: red; width: 70px;">Tổng: </h5>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="sum_mark-student" value="0">
+                                    </td>
+                                </tr>
                             </tbody>
 
                         </table>
                         
                         <button type="submit" class="btn btn-success btn_save">Lưu</button>
                     </form>
+                    <?php
+                        require_once $path.'display_sum_point_student.php';
+                    ?>
                     <?php
                         if(isset($_POST['gvNCKH1'])){
                             $gvDiemTBHK = $_POST['gvDiemTBHK'] ?? 0;
@@ -1745,6 +1802,8 @@
        
     </div>
         <script src="../../assets/js/teacherCheckPoint.js"></script>
+        <script src="../../assets/js/browser_teacher_mark.js"></script>
+
         <!-- <script src="../../assets/js/test2.js"></script> -->
 
         

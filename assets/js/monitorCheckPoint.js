@@ -40,7 +40,7 @@ svIrresponsibleMonitor.disabled = true;
 
 var svNCKH1 = document.querySelector("input[name='svNCKH1']")
 svNCKH1.disabled = true;
-console.log(svNCKH1.value)
+// console.log(svNCKH1.value)
 var svNCKH2 = document.querySelector("input[name='svNCKH2']")
 svNCKH2.disabled = true;
 
@@ -115,7 +115,7 @@ var ltNoCultural  = document.querySelector("#ltNoCultural")
 var ltIrresponsibleMonitor = document.querySelector("#ltIrresponsibleMonitor")
 
 var ltNCKH1 = document.querySelector("input[name='ltNCKH1']")
-console.log(ltNCKH1)
+// console.log(ltNCKH1)
 var ltNCKH2 = document.querySelector("input[name='ltNCKH2']")
 var ltNCKH3 = document.querySelector("input[name='ltNCKH3']")
 var ltOlympic1 = document.querySelector("input[name='ltOlympic1']")
