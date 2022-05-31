@@ -1,3 +1,7 @@
+var gvDiemTBHKVal = 0; 
+var gvCitizenVal = 0;
+var gvMonitorVal = 0;
+
 
 var checkBox = document.querySelector('#checkBox');
 
@@ -238,142 +242,208 @@ var gvNoProtect = document.querySelector("input[name='gvNoProtect']")
 var gvBonus = document.querySelector("input[name='gvBonus']")
 var gvRightRule = document.querySelector("input[name='gvRightRule']")
 
+var sum_mark_student = document.querySelector(".sum_mark-student")
 
+// type là radio
+for(var i = 0; i < gvDiemTBHK.length; i++){
+    if(gvDiemTBHK[i].checked == true){
+        gvDiemTBHKVal = parseInt(gvDiemTBHK[i].value);
+    }
+}
+
+
+for(var i = 0; i < gvCitizen.length; i++){
+    if(gvCitizen[i].checked == true){
+        gvCitizenVal = parseInt(gvCitizen[i].value);
+    }
+}
+
+for(var i = 0; i < gvMonitor.length; i++){
+    if(gvMonitor[i].checked == true){
+        gvMonitorVal = parseInt(gvMonitor[i].value);
+    }
+}
+
+var sum_input_radio = gvDiemTBHKVal+ gvCitizenVal + gvMonitorVal;
+sum_mark_student.value = sum_input_radio
 
 checkBox.onclick = function() {
+    var gvUnTrueTimeVal = 0;
+    var gvNoCardVal = 0;
+    var gvNoAtivitiesVal = 0;
+    var gvAdviseVal = 0
+    var gvIrresponsibleVal = 0
+    var gvNoCulturalVal = 0
+    var gvIrresponsibleMonitorVal = 0
+    var gvNCKH1Val = 0
+    var gvNCKH2Val = 0
+    var gvNCKH3Val = 0
+    var gvOlympic1Val = 0
+    var gvOlympic2Val = 0
+    var gvOlympic3Val = 0
+    var gvOlympic4Val = 0
+    var gvNoRegulationVal = 0
+    var gvOnTimeVal = 0
+    var gvAbandonVal = 0
+    var gvNoFullStudyVal = 0
+    var gvNoPayFeeVal = 0
+    var gvFullActiveVal = 0
+    var gvAchievementSchoolVal = 0
+    var gvAchievementCityVal = 0
+    var gvAdviseVal = 0 
+    var gvPositiveStudyVal = 0 
+    var gvPositiveLoveVal = 0 
+    var gvWarnVal = 0 
+    var gvNoProtectVal = 0 
+    var gvBonusVal = 0 
+    var gvRightRuleVal = 0 
     if(checkBox.checked == true){
-        // type là radio
-        // for(var i = 0; i < ltDiemTBHK.length; i++){
-        //     if(ltDiemTBHK[i].checked == true){
-        //         gvDiemTBHK[i].checked = true
-        //     }
-        // }
-        // for(var i = 0; i < ltCitizen.length; i++){
-        //     if(ltCitizen[i].checked == true){
-        //         gvCitizen[i].checked = true
-                
-        //     }
-        // }
-        // for(var i = 0; i < ltMonitor.length; i++){
-        //     if(ltMonitor[i].checked == true){
-        //         gvMonitor[i].checked = true;
-        //     }
-        // }
 
         // các thẻ select
         for(var i = 0; i<ltUnTrueTime.children.length; i++){
             if(ltUnTrueTime.children[i].selected == true){
                 gvUnTrueTime.children[i].selected = true
+                gvUnTrueTimeVal = parseInt(ltUnTrueTime.children[i].value)
             }
         }
         for(var i = 0; i<ltNoCard.children.length; i++){
             if(ltNoCard.children[i].selected == true){
                 gvNoCard.children[i].selected = true
+                gvNoCardVal = parseInt(ltNoCard.children[i].value)
+
             }
         }
         for(var i = 0; i<ltNoAtivities.children.length; i++){
             if(ltNoAtivities.children[i].selected == true){
                 gvNoAtivities.children[i].selected = true
+                gvNoAtivitiesVal = parseInt(ltNoAtivities.children[i].value)
             }
         }
         for(var i = 0; i<ltAdvise.children.length; i++){
             if(ltAdvise.children[i].selected == true){
                 gvAdvise.children[i].selected = true
+                gvAdviseVal = parseInt(ltAdvise.children[i].value)
             }
         }
         for(var i = 0; i<ltIrresponsible.children.length; i++){
             if(ltIrresponsible.children[i].selected == true){
                 gvIrresponsible.children[i].selected = true
+                gvIrresponsibleVal = parseInt(ltIrresponsible.children[i].value)
             }
         }
         for(var i = 0; i<ltNoCultural.children.length; i++){
             if(ltNoCultural.children[i].selected == true){
                 gvNoCultural.children[i].selected = true
+                gvNoCulturalVal = parseInt(ltNoCultural.children[i].value)
             }
         }
         for(var i = 0; i<ltIrresponsibleMonitor.children.length; i++){
             if(ltIrresponsibleMonitor.children[i].selected == true){
                 gvIrresponsibleMonitor.children[i].selected = true
+                gvIrresponsibleMonitorVal = parseInt(ltIrresponsibleMonitor.children[i].value)
             }
         }
 
         // Các thẻ input:checkbox
         // if(ltNCKH1.checked == true){
             gvNCKH1.value = ltNCKH1.value
+            gvNCKH1Val = parseInt(ltNCKH1.value)
         // }
         // if(ltNCKH2.checked == true){
             gvNCKH2.value = ltNCKH2.value
+            gvNCKH2Val = parseInt(ltNCKH2.value)
         // }
         // if(ltNCKH3.checked == true){
             gvNCKH3.value = ltNCKH3.value
+            gvNCKH3Val = parseInt(ltNCKH3.value)
         // }
         // if(ltOlympic1.checked == true){
             gvOlympic1.value = ltOlympic1.value
+            gvOlympic1Val = parseInt(ltOlympic1.value)
         // }
         // if(ltOlympic2.checked == true){
             gvOlympic2.value = ltOlympic2.value
+            gvOlympic2Val = parseInt(ltOlympic2.value)
         // }
         // if(ltOlympic3.checked == true){
             gvOlympic3.value = ltOlympic3.value
+            gvOlympic3Val = parseInt(ltOlympic3.value)
         // }
         // if(ltOlympic4.checked == true){
             gvOlympic4.value = ltOlympic4.value
+            gvOlympic4Val = parseInt(ltOlympic4.value)
         // }
         if(ltNoRegulation.checked == true){
             gvNoRegulation.checked = true
+            gvNoRegulationVal = parseInt(ltNoRegulation.value)
         }
         if(ltOnTime.checked == true){
             gvOnTime.checked = true
+            gvOnTimeVal = parseInt(ltOnTime.value)
         }
         // if(ltAbandon.checked == true){
             gvAbandon.value = ltAbandon.value
+            gvAbandonVal = parseInt(ltAbandon.value)
         // }
             
         
         if(ltNoFullStudy.checked == true){
             gvNoFullStudy.checked = true
+            gvNoFullStudyVal = parseInt(ltNoFullStudy.value)
         }
         
         
         if(ltNoPayFee.checked == true){
             gvNoPayFee.checked = true
+            gvNoPayFeeVal = parseInt(ltNoPayFee.value)
         }
 
         if(ltFullActive.checked == true){
             gvFullActive.checked = true
+            gvFullActiveVal = parseInt(ltFullActive.value)
         }
         // if(ltAchievementSchool.checked == true){
             gvAchievementSchool.value = ltAchievementSchool.value
+            gvAchievementSchoolVal = parseInt(ltAchievementSchool.value)
         // }
         // if(ltAchievementCity.checked == true){
             gvAchievementCity.value = ltAchievementCity.value
+            gvAchievementCityVal = parseInt(ltAchievementCity.value)
         // }
         if(ltAdvise.checked == true){
             gvAdvise.checked = true
+            gvAdviseVal = parseInt(ltAdvise.value)
         }
         
         
 
         if(ltPositiveStudy.checked == true){
             gvPositiveStudy.checked = true
+            gvPositiveStudyVal = parseInt(ltPositiveStudy.value)
         }
         if(ltPositiveLove.checked == true){
             gvPositiveLove.checked = true
+            gvPositiveLoveVal = parseInt(ltPositiveLove.value)
         }
         if(ltWarn.checked == true){
             gvWarn.checked = true
+            gvWarnVal = parseInt(ltWarn.value)
         }
         if(ltNoProtect.checked == true){
             gvNoProtect.checked = true
+            gvNoProtectVal = parseInt(ltNoProtect.value)
         }
         if(ltBonus.checked == true){
             gvBonus.checked = true
+            gvBonusVal = parseInt(ltBonus.value)
         }
         
         if(ltRightRule.checked == true){
             gvRightRule.checked = true
+            gvRightRuleVal = parseInt(ltRightRule.value)
         }
 
+        sum_mark_student.value = parseInt(gvUnTrueTimeVal) + parseInt(gvNoCardVal)+ parseInt(gvNoAtivitiesVal)+ parseInt(gvAdviseVal)+ parseInt(gvIrresponsibleVal)+ parseInt(gvNoCulturalVal)+ parseInt(gvIrresponsibleMonitorVal)+ parseInt(gvNCKH1Val)+ parseInt(gvNCKH2Val)+ parseInt(gvNCKH3Val)+ parseInt(gvOlympic1Val)+ parseInt(gvOlympic2Val)+ parseInt(gvOlympic3Val)+ parseInt(gvOlympic4Val)+ parseInt(gvNoRegulationVal)+ parseInt(gvOnTimeVal)+ parseInt(gvAbandonVal)+ parseInt(gvNoFullStudyVal)+ parseInt(gvNoPayFeeVal)+ parseInt(gvFullActiveVal)+ parseInt(gvAchievementSchoolVal)+ parseInt(gvAchievementCityVal)+ parseInt(gvAdviseVal)+ parseInt(gvPositiveStudyVal)+ parseInt(gvPositiveLoveVal)+ parseInt(gvWarnVal)+ parseInt(gvNoProtectVal)+ parseInt(gvBonusVal)+ parseInt(gvRightRuleVal) + parseInt(sum_input_radio);
        
         
 
@@ -394,6 +464,35 @@ checkBox.onclick = function() {
         //     gvMonitor[i].checked = false;
             
         // }
+        var ltUnTrueTimeVal = 0;
+        var ltNoCardVal = 0;
+        var ltNoAtivitiesVal = 0;
+        var ltAdviseVal = 0
+        var ltIrresponsibleVal = 0
+        var ltNoCulturalVal = 0
+        var ltIrresponsibleMonitorVal = 0
+        var ltNCKH1Val = 0
+        var ltNCKH2Val = 0
+        var ltNCKH3Val = 0
+        var ltOlympic1Val = 0
+        var ltOlympic2Val = 0
+        var ltOlympic3Val = 0
+        var ltOlympic4Val = 0
+        var ltNoRegulationVal = 0
+        var ltOnTimeVal = 0
+        var ltAbandonVal = 0
+        var ltNoFullStudyVal = 0
+        var ltNoPayFeeVal = 0
+        var ltFullActiveVal = 0
+        var ltAchievementSchoolVal = 0
+        var ltAchievementCityVal = 0
+        var ltAdviseVal = 0 
+        var ltPositiveStudyVal = 0 
+        var ltPositiveLoveVal = 0 
+        var ltWarnVal = 0 
+        var ltNoProtectVal = 0 
+        var ltBonusVal = 0 
+        var ltRightRuleVal = 0 
 
         for(var i = 0; i<ltUnTrueTime.children.length; i++){
             
@@ -453,5 +552,6 @@ checkBox.onclick = function() {
         gvNoProtect.checked = false;
         gvBonus.checked = false;
         gvRightRule.checked = false;
+        sum_mark_student.value = parseInt(gvUnTrueTimeVal) + parseInt(gvNoCardVal)+ parseInt(gvNoAtivitiesVal)+ parseInt(gvAdviseVal)+ parseInt(gvIrresponsibleVal)+ parseInt(gvNoCulturalVal)+ parseInt(gvIrresponsibleMonitorVal)+ parseInt(gvNCKH1Val)+ parseInt(gvNCKH2Val)+ parseInt(gvNCKH3Val)+ parseInt(gvOlympic1Val)+ parseInt(gvOlympic2Val)+ parseInt(gvOlympic3Val)+ parseInt(gvOlympic4Val)+ parseInt(gvNoRegulationVal)+ parseInt(gvOnTimeVal)+ parseInt(gvAbandonVal)+ parseInt(gvNoFullStudyVal)+ parseInt(gvNoPayFeeVal)+ parseInt(gvFullActiveVal)+ parseInt(gvAchievementSchoolVal)+ parseInt(gvAchievementCityVal)+ parseInt(gvAdviseVal)+ parseInt(gvPositiveStudyVal)+ parseInt(gvPositiveLoveVal)+ parseInt(gvWarnVal)+ parseInt(gvNoProtectVal)+ parseInt(gvBonusVal)+ parseInt(gvRightRuleVal) + parseInt(sum_input_radio);
     }
 }

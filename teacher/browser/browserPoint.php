@@ -1801,7 +1801,8 @@
         </div>
        
     </div>
-        <script src="../../assets/js/teacherCheckPoint.js"></script>
+        <!-- <script src="../../assets/js/teacherCheckPoint.js"></script> -->
+        <script src="../../assets/js/checkbox_teacher.js"></script>
         <script src="../../assets/js/browser_teacher_mark.js"></script>
 
         <!-- <script src="../../assets/js/test2.js"></script> -->

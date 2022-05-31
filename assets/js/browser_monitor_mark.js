@@ -14,7 +14,7 @@
 // let ltAbandon = document.querySelector('input[name="ltAbandon"]')
 // let ltUnTrueTime = document.querySelector('#ltUnTrueTime')
 let sum_one = document.querySelector('.sum_one')
-console.log(sum_one);
+// console.log(sum_one);
 let ltDiemTBHK_item = sum_one_item = ltUnTrueTime_item = sum_one_value 
     = ltNCKH1_point = ltNCKH2_point = ltNCKH3_point = ltOlympic1_point 
     = ltOlympic2_point = ltOlympic3_point = ltOlympic4_point = ltAbandon_point = 0

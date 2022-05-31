@@ -1219,7 +1219,7 @@
                                         <h5 style="color: red; width: 70px;">Tổng: </h5>
                                     </td>
                                     <td>
-                                        <input type="number" class="sum_mark-student" value="">
+                                        <input type="number" class="sum_mark-student" value="0">
                                     </td>
                                 </tr>
                                 
@@ -1507,8 +1507,10 @@
        
     </div>
         <!-- <script src = "../assets/js/test.js"></script> -->
-        <script src = "../assets/js/monitorCheckPoint.js"></script>
+        <!-- <script src = "../assets/js/monitorCheckPoint.js"></script> -->
+        <script src = "../assets/js/checkbox.js"></script>
         <script src = "../assets/js/browser_monitor_mark.js"></script>
+
 
 
         
